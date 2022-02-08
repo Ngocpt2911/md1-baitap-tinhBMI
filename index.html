@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let x = parseFloat(prompt('Hãy nhập chiều cao của bạn(đơn vị là m): '))
+    let y = parseFloat(prompt('hãy nhập cân nặng của bạn(đơn vị là kg): '))
+    BMI = y / (x * x)
+    console.log('giá trị của BMI:',BMI)
+    if (BMI < 16) {
+        alert('Gầy độ III')
+    } else if (BMI < 17 && BMI >= 16) {
+        alert('Gầy độ II')
+    }else if (BMI < 18 && BMI >= 17){
+        alert('Gầy độ I')
+    }else if (BMI < 25 && BMI >= 18.5){
+        alert('Bình thường')
+    } else if(BMI < 30 && BMI >= 25){
+        alert('Thừa cân')
+    } else  if (BMI < 35 && BMI >= 30){
+        alert('Béo phì độ I')
+    } else if(BMI < 40 && BMI >= 35){
+        alert('Béo phì độ II')
+    } else if( 40<BMI ){
+        alert('Béo phì độ III')
+    }
+</script>
+</html>
